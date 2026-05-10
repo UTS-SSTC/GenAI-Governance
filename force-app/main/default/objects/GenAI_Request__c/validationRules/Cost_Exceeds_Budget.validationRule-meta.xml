@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Exceeds_Budget</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(Estimated_Monthly_Cost__c)),
+  NOT(ISBLANK(Business_Unit__c)),
+  Estimated_Monthly_Cost__c &gt; Business_Unit__r.Budget_Limit__c
+)</errorConditionFormula>
+    <errorMessage>Estimated monthly cost cannot exceed the business unit budget limit.</errorMessage>
+</ValidationRule>

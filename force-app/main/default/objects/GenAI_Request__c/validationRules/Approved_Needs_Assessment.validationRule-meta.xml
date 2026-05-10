@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Needs_Assessment</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Request_Status__c, &quot;Approved&quot;),
+  Risk_Assessment_Count__c &lt; 1
+)</errorConditionFormula>
+    <errorMessage>A GenAI request cannot be approved without at least one completed risk assessment.</errorMessage>
+</ValidationRule>

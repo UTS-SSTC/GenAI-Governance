@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>GenAI_Governance</application>
+        <default>true</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <custom>true</custom>
+    <fieldPermissions><editable>false</editable><field>Business_Unit__c.Budget_Limit__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>false</editable><field>Business_Unit__c.Department_Type__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>false</editable><field>Business_Unit__c.Manager_Email__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>false</editable><field>Cloud_Model__c.Cloud_Provider__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>false</editable><field>Cloud_Model__c.Data_Residency_Region__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>false</editable><field>Cloud_Model__c.Estimated_Cost_Per_1K_Tokens__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>false</editable><field>Cloud_Model__c.Service_Type__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>false</editable><field>Cloud_Model__c.Status__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>GenAI_Request__c.Business_Justification__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>GenAI_Request__c.Business_Unit__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>GenAI_Request__c.Data_Sensitivity__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>GenAI_Request__c.Estimated_Monthly_Cost__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>GenAI_Request__c.Request_Owner_Email__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>GenAI_Request__c.Request_Status__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>GenAI_Request__c.Required_Deployment_Date_Time__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>false</editable><field>GenAI_Request__c.Risk_Assessment_Count__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>GenAI_Request__c.Selected_Cloud_Model__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>GenAI_Request__c.Use_Case_Type__c</field><readable>true</readable></fieldPermissions>
+    <objectPermissions><allowCreate>false</allowCreate><allowDelete>false</allowDelete><allowEdit>false</allowEdit><allowRead>true</allowRead><modifyAllRecords>false</modifyAllRecords><object>Business_Unit__c</object><viewAllRecords>false</viewAllRecords></objectPermissions>
+    <objectPermissions><allowCreate>false</allowCreate><allowDelete>false</allowDelete><allowEdit>false</allowEdit><allowRead>true</allowRead><modifyAllRecords>false</modifyAllRecords><object>Cloud_Model__c</object><viewAllRecords>false</viewAllRecords></objectPermissions>
+    <objectPermissions><allowCreate>true</allowCreate><allowDelete>false</allowDelete><allowEdit>true</allowEdit><allowRead>true</allowRead><modifyAllRecords>false</modifyAllRecords><object>GenAI_Request__c</object><viewAllRecords>false</viewAllRecords></objectPermissions>
+    <tabVisibilities><tab>Business_Unit__c</tab><visibility>DefaultOn</visibility></tabVisibilities>
+    <tabVisibilities><tab>Cloud_Model__c</tab><visibility>DefaultOn</visibility></tabVisibilities>
+    <tabVisibilities><tab>GenAI_Request__c</tab><visibility>DefaultOn</visibility></tabVisibilities>
+    <tabVisibilities><tab>Risk_Assessment__c</tab><visibility>Hidden</visibility></tabVisibilities>
+    <userLicense>Salesforce</userLicense>
+</Profile>

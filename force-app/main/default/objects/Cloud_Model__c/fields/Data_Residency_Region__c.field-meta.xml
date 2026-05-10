@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Residency_Region__c</fullName>
+    <label>Data Residency Region</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>Australia</fullName><default>false</default><label>Australia</label></value>
+            <value><fullName>US</fullName><default>false</default><label>US</label></value>
+            <value><fullName>EU</fullName><default>false</default><label>EU</label></value>
+            <value><fullName>Asia-Pacific</fullName><default>false</default><label>Asia-Pacific</label></value>
+            <value><fullName>Other</fullName><default>false</default><label>Other</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>High_Sensitivity_Justification</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Data_Sensitivity__c, &quot;High&quot;),
+  ISBLANK(Business_Justification__c)
+)</errorConditionFormula>
+    <errorMessage>High sensitivity GenAI requests must include a business justification.</errorMessage>
+</ValidationRule>

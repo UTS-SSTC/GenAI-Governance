@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Manages GenAI cloud service requests, risk assessment, governance review, and deployment preparation.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>true</isNavAutoTempTabsDisabled>
+    <label>GenAI Governance</label>
+    <navType>Standard</navType>
+    <tabs>Business_Unit__c</tabs>
+    <tabs>Cloud_Model__c</tabs>
+    <tabs>GenAI_Request__c</tabs>
+    <tabs>Risk_Assessment__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

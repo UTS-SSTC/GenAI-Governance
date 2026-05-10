@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Needs_Model</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Request_Status__c, &quot;Approved&quot;),
+  ISBLANK(Selected_Cloud_Model__c)
+)</errorConditionFormula>
+    <errorMessage>An approved GenAI request must have a selected cloud model.</errorMessage>
+</ValidationRule>
