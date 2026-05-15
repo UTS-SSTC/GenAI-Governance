@@ -200,6 +200,35 @@ def update_record(
     )
 
 
+def delete_record(
+    sobject: str,
+    record_id: str,
+    target_org: str = DEFAULT_ORG_ALIAS,
+) -> None:
+    """
+    Delete a Salesforce record by ID.
+
+    Args:
+        sobject: Salesforce object API name.
+        record_id: Salesforce record ID.
+        target_org: Salesforce CLI org alias.
+    """
+    run_sf(
+        [
+            "data",
+            "delete",
+            "record",
+            "--target-org",
+            target_org,
+            "--sobject",
+            sobject,
+            "--record-id",
+            record_id,
+            "--json",
+        ]
+    )
+
+
 def format_values(values: Mapping[str, object]) -> str:
     """
     Format field values for Salesforce CLI data commands.
