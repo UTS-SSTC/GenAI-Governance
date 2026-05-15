@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Risk_Assessments</fullName>
+    <columns>NAME</columns>
+    <columns>GenAI_Request__c</columns>
+    <columns>Assessment_Status__c</columns>
+    <columns>Privacy_Risk_Level__c</columns>
+    <columns>Compliance_Risk_Level__c</columns>
+    <columns>Security_Review_Required__c</columns>
+    <filters>
+        <field>Assessment_Status__c</field>
+        <operation>equals</operation>
+        <value>Pending</value>
+    </filters>
+    <filterScope>Everything</filterScope>
+    <label>Pending Risk Assessments</label>
+</ListView>

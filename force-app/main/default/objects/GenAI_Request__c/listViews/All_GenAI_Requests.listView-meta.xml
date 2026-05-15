@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_GenAI_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>Request_Status__c</columns>
+    <columns>Business_Unit__c</columns>
+    <columns>Selected_Cloud_Model__c</columns>
+    <columns>Use_Case_Type__c</columns>
+    <columns>Data_Sensitivity__c</columns>
+    <columns>Estimated_Monthly_Cost__c</columns>
+    <columns>Risk_Assessment_Count__c</columns>
+    <columns>Required_Deployment_Date_Time__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All GenAI Requests</label>
+</ListView>
